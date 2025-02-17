@@ -1,4 +1,3 @@
-image: gitpod/workspace-ruby:latest
 
 tasks:
   - init: |
