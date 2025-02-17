@@ -1,6 +1,14 @@
 
-# List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
+image:
+  # Specify a base image if you need a custom environment, or use a Ruby image.
+  # You can start with the default Ruby image, for example:
+  # image: gitpod/workspace-ruby
+
 tasks:
-  - init: gem install rspec
-    -init: gem install selenium-webdriver # runs during prebuild
-      command: rspec parallel_tests.rb
+  - name: Install gems and run RSpec
+    init:
+      - gem install rspec
+      - gem install selenium-webdriver
+    command: |
+      # Run RSpec command after installation
+      rspec parallel_tests.rb
