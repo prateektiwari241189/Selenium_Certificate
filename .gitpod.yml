@@ -1,7 +1,3 @@
-image:
-  # Specify a base image if you need a custom environment, or use a Ruby image.
-  # You can start with the default Ruby image, for example:
-  # image: gitpod/workspace-ruby
 
 tasks:
   - name: Install gems and run RSpec
