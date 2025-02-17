@@ -1,0 +1,6 @@
+
+# List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - init: gem install rspec
+  -init: gem install selenium-webdriver # runs during prebuild
+    command: rspec parallel_tests.rb
