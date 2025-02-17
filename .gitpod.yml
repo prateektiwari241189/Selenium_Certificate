@@ -3,4 +3,4 @@
 tasks:
   - init: gem install rspec
     -init: gem install selenium-webdriver # runs during prebuild
-      command: rspec parallel_tests.rb
+    command: rspec parallel_tests.rb
