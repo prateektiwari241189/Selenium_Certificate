@@ -1,6 +1,5 @@
 require 'selenium-webdriver'
 require 'rspec'
-require 'concurrent'
 
 # Method to initialize a browser
 def initialize_browser(browser)
