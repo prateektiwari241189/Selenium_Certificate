@@ -5,5 +5,4 @@ tasks:
       - gem install rspec
       - gem install selenium-webdriver
     command: |
-      # Run RSpec command after installation
       rspec parallel_tests.rb
