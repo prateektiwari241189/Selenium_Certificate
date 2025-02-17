@@ -1,8 +1,14 @@
+image: gitpod/workspace-ruby:latest
 
 tasks:
-  - name: Install gems and run RSpec
-    init:
-      - gem install rspec
-      - gem install selenium-webdriver
+  - init: |
+      # Install the required gems
+      gem install rspec
+      gem install selenium-webdriver  # Replace with the second gem you need
     command: |
-      rspec parallel_tests.rb
+      # Run the RSpec tests
+      rspec parallel_tests.rb # Replace with the actual path to your RSpec file
+
+ports:
+  - port: 3000
+    onOpen: open-preview
